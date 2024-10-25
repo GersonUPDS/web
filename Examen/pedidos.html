@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido</title>
+    <link rel="stylesheet" href="pedidos.css">
+</head>
+<body>
+
+<h1>Formulario de Pedido</h1>
+
+<div class="pedido-container">
+    <form class="pedido-form">
+        <h2>Selecciona tus platos</h2>
+
+        <!-- Entradas -->
+        <div class="menu-category">
+            <h3>Entradas</h3>
+            <div class="menu-item">
+                <label for="ensalada-cesar">Ensalada César - 45 bs</label>
+                <input type="number" id="ensalada-cesar" name="ensalada-cesar" min="0" value="0">
+            </div>
+            <div class="menu-item">
+                <label for="empanadas-queso">Empanadas de Queso - 20 bs</label>
+                <input type="number" id="empanadas-queso" name="empanadas-queso" min="0" value="0">
+            </div>
+        </div>
+
+        <!-- Platos Principales -->
+        <div class="menu-category">
+            <h3>Platos Principales</h3>
+            <div class="menu-item">
+                <label for="pizza-margarita">Pizza Margarita - 65 bs</label>
+                <input type="number" id="pizza-margarita" name="pizza-margarita" min="0" value="0">
+            </div>
+            <div class="menu-item">
+                <label for="lomo-saltado">Lomo Saltado - 80 bs</label>
+                <input type="number" id="lomo-saltado" name="lomo-saltado" min="0" value="0">
+            </div>
+        </div>
+
+        <!-- Postres -->
+        <div class="menu-category">
+            <h3>Postres</h3>
+            <div class="menu-item">
+                <label for="tiramisu">Tiramisú - 25 bs</label>
+                <input type="number" id="tiramisu" name="tiramisu" min="0" value="0">
+            </div>
+            <div class="menu-item">
+                <label for="helado-vainilla">Helado de Vainilla - 15 bs</label>
+                <input type="number" id="helado-vainilla" name="helado-vainilla" min="0" value="0">
+            </div>
+        </div>
+
+        <!-- Información de contacto -->
+        <h2>Datos del cliente</h2>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="direccion">Dirección de entrega</label>
+        <textarea id="direccion" name="direccion" required></textarea>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</div>
+
+</body>
+</html>
